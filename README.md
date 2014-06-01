@@ -1,10 +1,9 @@
-#########################################################################
-#########################################################################
-Pipeline x GBS data 
-#########################################################################
-#########################################################################
+GBS
+==============
 
 Pipeline for analyze Genome By Sequencing data ( NGS technique based on restiction enzyme).
+--------------
+
 
 Quality control with FastQC.
 Demultiplexing with preprocess_radtags (Stacks), based on barcode and cutting siteof the restriction enyme.
