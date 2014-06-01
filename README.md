@@ -2,21 +2,27 @@ GBS
 ==============
 
 Pipeline for analyze Genome By Sequencing data ( NGS technique based on restiction enzyme).
---------------
+
 
 
 Quality control with FastQC.
+
 Demultiplexing with preprocess_radtags (Stacks), based on barcode and cutting siteof the restriction enyme.
+
 Alignment to A. lyrata genome v1.0 (BWA-MEM)
+
 Removing duplicate (Picard tools)
+
 Selecting reads with MAPQ when > 20 (samtools)
+
 SNP Calling:
-Clean and sort with picard-tools
-GATK RealignerTargetCreator and IndelRealigner
-GATK UnifiedGenotyper to get an initial good set of SNPs
-GATK  BaseRecalibrator to get a recalibrated mapping file
-GATK UnifiedGenotyper again on this recalibrated file
-Filter the results for quality and coverage
+- Clean and sort with picard-tools
+- GATK RealignerTargetCreator and IndelRealigner
+- GATK UnifiedGenotyper to get an initial good set of SNPs
+- GATK  BaseRecalibrator to get a recalibrated mapping file
+- GATK UnifiedGenotyper again on this recalibrated file
+- Filter the results for quality and coverage
+
 In-house R script (gbs_gatk) to calculate SNP population frequencies
 
 Software used:
