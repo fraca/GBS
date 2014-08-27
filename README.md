@@ -5,12 +5,12 @@ Pipeline for analyze Genome By Sequencing data ( NGS technique based on resticti
 
 
 
-Demultiplexing with preprocess_radtags (Stacks), based on barcode and cutting site of the restriction enzyme.
-Trimming with trim-fastq.pl (Popoolation).
-Alignment to A. lyrata genome v1.0 (BWA-MEM).
-Removing duplicate (Picard tools).
-Selecting reads with MAPQ when > 20 (samtools).
-SNP calling with Varscan.
+- Demultiplexing with preprocess_radtags (Stacks), based on barcode and cutting site of the restriction enzyme.
+- Trimming with trim-fastq.pl (Popoolation).
+- Alignment to A. lyrata genome v1.0 (BWA-MEM).
+- Removing duplicate (Picard tools).
+- Selecting reads with MAPQ when > 20 (samtools).
+- SNP calling with Varscan.
 
 Software used:
 
@@ -25,15 +25,15 @@ Software used:
 
 scripts:
 
-GBS_demultiplex.sh
+- GBS_demultiplex.sh
 dempultiplexing and trimming of the fastq files.
 
-GBS_alignment.sh
+- GBS_alignment.sh
 Alignement, remove duplicate, selecting proper aligned reads.
 Coverage calculations.
 Create bams files for each sample.
 
-GBS_SNPcall.sh
+- GBS_SNPcall.sh
 SNP calling with Varscan.
 
 
