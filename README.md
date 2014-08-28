@@ -29,7 +29,7 @@ scripts:
 dempultiplexing and trimming of the fastq files.
 
 - GBS_alignment.sh
-Alignement, remove duplicate, selecting proper aligned reads.
+Alignment, remove duplicate, selecting proper aligned reads.
 Coverage calculations.
 Create bams files for each sample.
 

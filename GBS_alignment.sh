@@ -79,104 +79,104 @@ samtools merge -@ $n_threads -f temp.bam bams/07H01.bam bams/07H01_with_HpaII.ba
 samtools sort -@ $n_threads temp.bam bams/07H01_uni
 
 $bin_dir"/bedtools/genomeCoverageBed" -ibam "bams/07H01_uni.bam" | grep "^genome" > temp_cov
-awk -vind="bams/07H01_uni" ' {if($2>=5 && $2<=500) {{bla+=$5; mpond+=$2*$3; sum+=$3}}} END { print  ind, bla, mpond/sum}' temp_cov >> GBS_5dp_cov
-awk -vind="bams/07H01_uni" ' {if($2>=2 && $2<=500) {{bla+=$5; mpond+=$2*$3; sum+=$3}}} END { print  ind, bla, mpond/sum}' temp_cov >> GBS_2dp_cov
+awk -vind="07H01_uni" ' {if($2>=5 && $2<=500) {{bla+=$5; mpond+=$2*$3; sum+=$3}}} END { print  ind, bla, mpond/sum}' temp_cov >> GBS_5dp_cov
+awk -vind="07H01_uni" ' {if($2>=2 && $2<=500) {{bla+=$5; mpond+=$2*$3; sum+=$3}}} END { print  ind, bla, mpond/sum}' temp_cov >> GBS_2dp_cov
 rm temp_cov
 
 samtools merge -@ $n_threads -f temp.bam bams/07H18.bam bams/07H18_with_HpaII.bam
 samtools sort -@ $n_threads temp.bam bams/07H18_uni
 
-$bin_dir"/bedtools/genomeCoverageBed" -ibam "bams/07H018_uni.bam" | grep "^genome" > temp_cov
-awk -vind="bams/07H018_uni" ' {if($2>=5 && $2<=500) {{bla+=$5; mpond+=$2*$3; sum+=$3}}} END { print  ind, bla, mpond/sum}' temp_cov >> GBS_5dp_cov
-awk -vind="bams/07H018_uni" ' {if($2>=2 && $2<=500) {{bla+=$5; mpond+=$2*$3; sum+=$3}}} END { print  ind, bla, mpond/sum}' temp_cov >> GBS_2dp_cov
+$bin_dir"/bedtools/genomeCoverageBed" -ibam "bams/07H18_uni.bam" | grep "^genome" > temp_cov
+awk -vind="07H18_uni" ' {if($2>=5 && $2<=500) {{bla+=$5; mpond+=$2*$3; sum+=$3}}} END { print  ind, bla, mpond/sum}' temp_cov >> GBS_5dp_cov
+awk -vind="07H18_uni" ' {if($2>=2 && $2<=500) {{bla+=$5; mpond+=$2*$3; sum+=$3}}} END { print  ind, bla, mpond/sum}' temp_cov >> GBS_2dp_cov
 rm temp_cov
 
 samtools merge -@ $n_threads -f temp.bam bams/07H20.bam bams/07H20_with_HpaII.bam
 samtools sort -@ $n_threads temp.bam bams/07H20_uni
 
 $bin_dir"/bedtools/genomeCoverageBed" -ibam "bams/07H20_uni.bam" | grep "^genome" > temp_cov
-awk -vind="bams/07H20_uni" ' {if($2>=5 && $2<=500) {{bla+=$5; mpond+=$2*$3; sum+=$3}}} END { print  ind, bla, mpond/sum}' temp_cov >> GBS_5dp_cov
-awk -vind="bams/07H20_uni" ' {if($2>=2 && $2<=500) {{bla+=$5; mpond+=$2*$3; sum+=$3}}} END { print  ind, bla, mpond/sum}' temp_cov >> GBS_2dp_cov
+awk -vind="07H20_uni" ' {if($2>=5 && $2<=500) {{bla+=$5; mpond+=$2*$3; sum+=$3}}} END { print  ind, bla, mpond/sum}' temp_cov >> GBS_5dp_cov
+awk -vind="07H20_uni" ' {if($2>=2 && $2<=500) {{bla+=$5; mpond+=$2*$3; sum+=$3}}} END { print  ind, bla, mpond/sum}' temp_cov >> GBS_2dp_cov
 rm temp_cov
 
 samtools merge -@ $n_threads -f temp.bam bams/07H23.bam bams/07H23_with_HpaII.bam
 samtools sort -@ $n_threads temp.bam bams/07H23_uni
 
 $bin_dir"/bedtools/genomeCoverageBed" -ibam "bams/07H23_uni.bam" | grep "^genome" > temp_cov
-awk -vind="bams/07H23_uni" ' {if($2>=5 && $2<=500) {{bla+=$5; mpond+=$2*$3; sum+=$3}}} END { print  ind, bla, mpond/sum}' temp_cov >> GBS_5dp_cov
-awk -vind="bams/07H23_uni" ' {if($2>=2 && $2<=500) {{bla+=$5; mpond+=$2*$3; sum+=$3}}} END { print  ind, bla, mpond/sum}' temp_cov >> GBS_2dp_cov
+awk -vind="07H23_uni" ' {if($2>=5 && $2<=500) {{bla+=$5; mpond+=$2*$3; sum+=$3}}} END { print  ind, bla, mpond/sum}' temp_cov >> GBS_5dp_cov
+awk -vind="07H23_uni" ' {if($2>=2 && $2<=500) {{bla+=$5; mpond+=$2*$3; sum+=$3}}} END { print  ind, bla, mpond/sum}' temp_cov >> GBS_2dp_cov
 rm temp_cov
 
 samtools merge -@ $n_threads -f temp.bam bams/11U07.bam bams/11U07_with_HpaII.bam
 samtools sort -@ $n_threads temp.bam bams/11U07_uni
 
 $bin_dir"/bedtools/genomeCoverageBed" -ibam "bams/11U07_uni.bam" | grep "^genome" > temp_cov
-awk -vind="bams/11U07_uni" ' {if($2>=5 && $2<=500) {{bla+=$5; mpond+=$2*$3; sum+=$3}}} END { print  ind, bla, mpond/sum}' temp_cov >> GBS_5dp_cov
-awk -vind="bams/11U07_uni" ' {if($2>=2 && $2<=500) {{bla+=$5; mpond+=$2*$3; sum+=$3}}} END { print  ind, bla, mpond/sum}' temp_cov >> GBS_2dp_cov
+awk -vind="11U07_uni" ' {if($2>=5 && $2<=500) {{bla+=$5; mpond+=$2*$3; sum+=$3}}} END { print  ind, bla, mpond/sum}' temp_cov >> GBS_5dp_cov
+awk -vind="11U07_uni" ' {if($2>=2 && $2<=500) {{bla+=$5; mpond+=$2*$3; sum+=$3}}} END { print  ind, bla, mpond/sum}' temp_cov >> GBS_2dp_cov
 rm temp_cov
 
 samtools merge -@ $n_threads -f temp.bam bams/11U10.bam bams/11U10_with_HpaII.bam
 samtools sort -@ $n_threads temp.bam bams/11U10_uni
 
 $bin_dir"/bedtools/genomeCoverageBed" -ibam "bams/11U10_uni.bam" | grep "^genome" > temp_cov
-awk -vind="bams/11U10_uni" ' {if($2>=5 && $2<=500) {{bla+=$5; mpond+=$2*$3; sum+=$3}}} END { print  ind, bla, mpond/sum}' temp_cov >> GBS_5dp_cov
-awk -vind="bams/11U10_uni" ' {if($2>=2 && $2<=500) {{bla+=$5; mpond+=$2*$3; sum+=$3}}} END { print  ind, bla, mpond/sum}' temp_cov >> GBS_2dp_cov
+awk -vind="11U10_uni" ' {if($2>=5 && $2<=500) {{bla+=$5; mpond+=$2*$3; sum+=$3}}} END { print  ind, bla, mpond/sum}' temp_cov >> GBS_5dp_cov
+awk -vind="11U10_uni" ' {if($2>=2 && $2<=500) {{bla+=$5; mpond+=$2*$3; sum+=$3}}} END { print  ind, bla, mpond/sum}' temp_cov >> GBS_2dp_cov
 rm temp_cov
 
 samtools merge -@ $n_threads -f temp.bam bams/11U13.bam bams/11U13_with_HpaII.bam bams/11U13_full_repeat.bam bams/11U13_half_repeat.bam
 samtools sort -@ $n_threads temp.bam bams/11U13_uni
 
 $bin_dir"/bedtools/genomeCoverageBed" -ibam "bams/11U13_uni.bam" | grep "^genome" > temp_cov
-awk -vind="bams/11U13_uni" ' {if($2>=5 && $2<=500) {{bla+=$5; mpond+=$2*$3; sum+=$3}}} END { print  ind, bla, mpond/sum}' temp_cov >> GBS_5dp_cov
-awk -vind="bams/11U13_uni" ' {if($2>=2 && $2<=500) {{bla+=$5; mpond+=$2*$3; sum+=$3}}} END { print  ind, bla, mpond/sum}' temp_cov >> GBS_2dp_cov
+awk -vind="11U13_uni" ' {if($2>=5 && $2<=500) {{bla+=$5; mpond+=$2*$3; sum+=$3}}} END { print  ind, bla, mpond/sum}' temp_cov >> GBS_5dp_cov
+awk -vind="11U13_uni" ' {if($2>=2 && $2<=500) {{bla+=$5; mpond+=$2*$3; sum+=$3}}} END { print  ind, bla, mpond/sum}' temp_cov >> GBS_2dp_cov
 rm temp_cov
 
 samtools merge -@ $n_threads -f temp.bam bams/11U16.bam bams/11U16_with_HpaII.bam bams/11U16_full_repeat.bam bams/11U16_half_repeat.bam
 samtools sort -@ $n_threads temp.bam bams/11U16_uni
 
 $bin_dir"/bedtools/genomeCoverageBed" -ibam "bams/11U16_uni.bam" | grep "^genome" > temp_cov
-awk -vind="bams/11U16_uni" ' {if($2>=5 && $2<=500) {{bla+=$5; mpond+=$2*$3; sum+=$3}}} END { print  ind, bla, mpond/sum}' temp_cov >> GBS_5dp_cov
-awk -vind="bams/11U16_uni" ' {if($2>=2 && $2<=500) {{bla+=$5; mpond+=$2*$3; sum+=$3}}} END { print  ind, bla, mpond/sum}' temp_cov >> GBS_2dp_cov
+awk -vind="11U16_uni" ' {if($2>=5 && $2<=500) {{bla+=$5; mpond+=$2*$3; sum+=$3}}} END { print  ind, bla, mpond/sum}' temp_cov >> GBS_5dp_cov
+awk -vind="11U16_uni" ' {if($2>=2 && $2<=500) {{bla+=$5; mpond+=$2*$3; sum+=$3}}} END { print  ind, bla, mpond/sum}' temp_cov >> GBS_2dp_cov
 rm temp_cov
 
 samtools merge -@ $n_threads -f temp.bam bams/11U19.bam bams/11U19_with_HpaII.bam
 samtools sort -@ $n_threads temp.bam bams/11U19_uni
 
 $bin_dir"/bedtools/genomeCoverageBed" -ibam "bams/11U19_uni.bam" | grep "^genome" > temp_cov
-awk -vind="bams/11U19_uni" ' {if($2>=5 && $2<=500) {{bla+=$5; mpond+=$2*$3; sum+=$3}}} END { print  ind, bla, mpond/sum}' temp_cov >> GBS_5dp_cov
-awk -vind="bams/11U19_uni" ' {if($2>=2 && $2<=500) {{bla+=$5; mpond+=$2*$3; sum+=$3}}} END { print  ind, bla, mpond/sum}' temp_cov >> GBS_2dp_cov
+awk -vind="11U19_uni" ' {if($2>=5 && $2<=500) {{bla+=$5; mpond+=$2*$3; sum+=$3}}} END { print  ind, bla, mpond/sum}' temp_cov >> GBS_5dp_cov
+awk -vind="11U19_uni" ' {if($2>=2 && $2<=500) {{bla+=$5; mpond+=$2*$3; sum+=$3}}} END { print  ind, bla, mpond/sum}' temp_cov >> GBS_2dp_cov
 rm temp_cov
 
 samtools merge -@ $n_threads -f temp.bam bams/11U20.bam bams/11U20_with_HpaII.bam
 samtools sort -@ $n_threads temp.bam bams/11U20_uni
 
 $bin_dir"/bedtools/genomeCoverageBed" -ibam "bams/11U20_uni.bam" | grep "^genome" > temp_cov
-awk -vind="bams/11U20_uni" ' {if($2>=5 && $2<=500) {{bla+=$5; mpond+=$2*$3; sum+=$3}}} END { print  ind, bla, mpond/sum}' temp_cov >> GBS_5dp_cov
-awk -vind="bams/11U20_uni" ' {if($2>=2 && $2<=500) {{bla+=$5; mpond+=$2*$3; sum+=$3}}} END { print  ind, bla, mpond/sum}' temp_cov >> GBS_2dp_cov
+awk -vind="11U20_uni" ' {if($2>=5 && $2<=500) {{bla+=$5; mpond+=$2*$3; sum+=$3}}} END { print  ind, bla, mpond/sum}' temp_cov >> GBS_5dp_cov
+awk -vind="11U20_uni" ' {if($2>=2 && $2<=500) {{bla+=$5; mpond+=$2*$3; sum+=$3}}} END { print  ind, bla, mpond/sum}' temp_cov >> GBS_2dp_cov
 rm temp_cov
 
 samtools merge -@ $n_threads -f temp.bam bams/11U23.bam bams/11U23_with_HpaII.bam
 samtools sort -@ $n_threads temp.bam bams/11U23_uni
 
 $bin_dir"/bedtools/genomeCoverageBed" -ibam "bams/11U23_uni.bam" | grep "^genome" > temp_cov
-awk -vind="bams/11U23_uni" ' {if($2>=5 && $2<=500) {{bla+=$5; mpond+=$2*$3; sum+=$3}}} END { print  ind, bla, mpond/sum}' temp_cov >> GBS_5dp_cov
-awk -vind="bams/11U23_uni" ' {if($2>=2 && $2<=500) {{bla+=$5; mpond+=$2*$3; sum+=$3}}} END { print  ind, bla, mpond/sum}' temp_cov >> GBS_2dp_cov
+awk -vind="11U23_uni" ' {if($2>=5 && $2<=500) {{bla+=$5; mpond+=$2*$3; sum+=$3}}} END { print  ind, bla, mpond/sum}' temp_cov >> GBS_5dp_cov
+awk -vind="11U23_uni" ' {if($2>=2 && $2<=500) {{bla+=$5; mpond+=$2*$3; sum+=$3}}} END { print  ind, bla, mpond/sum}' temp_cov >> GBS_2dp_cov
 rm temp_cov
 
 samtools merge -@ $n_threads -f temp.bam bams/11U25.bam bams/11U25_with_HpaII.bam bams/11U25_full_repeat.bam bams/11U25_half_repeat.bam
 samtools sort -@ $n_threads temp.bam bams/11U25_uni
 
 $bin_dir"/bedtools/genomeCoverageBed" -ibam "bams/11U25_uni.bam" | grep "^genome" > temp_cov
-awk -vind="bams/11U25_uni" ' {if($2>=5 && $2<=500) {{bla+=$5; mpond+=$2*$3; sum+=$3}}} END { print  ind, bla, mpond/sum}' temp_cov >> GBS_5dp_cov
-awk -vind="bams/11U25_uni" ' {if($2>=2 && $2<=500) {{bla+=$5; mpond+=$2*$3; sum+=$3}}} END { print  ind, bla, mpond/sum}' temp_cov >> GBS_2dp_cov
+awk -vind="11U25_uni" ' {if($2>=5 && $2<=500) {{bla+=$5; mpond+=$2*$3; sum+=$3}}} END { print  ind, bla, mpond/sum}' temp_cov >> GBS_5dp_cov
+awk -vind="11U25_uni" ' {if($2>=2 && $2<=500) {{bla+=$5; mpond+=$2*$3; sum+=$3}}} END { print  ind, bla, mpond/sum}' temp_cov >> GBS_2dp_cov
 rm temp_cov
 
 samtools merge -@ $n_threads -f temp.bam bams/11U27.bam bams/11U27_with_HpaII.bam bams/11U27_full_repeat.bam bams/11U27_half_repeat.bam
 samtools sort -@ $n_threads temp.bam bams/11U27_uni
 
 $bin_dir"/bedtools/genomeCoverageBed" -ibam "bams/11U27_uni.bam" | grep "^genome" > temp_cov
-awk -vind="bams/11U27_uni" ' {if($2>=5 && $2<=500) {{bla+=$5; mpond+=$2*$3; sum+=$3}}} END { print  ind, bla, mpond/sum}' temp_cov >> GBS_5dp_cov
-awk -vind="bams/11U27_uni" ' {if($2>=2 && $2<=500) {{bla+=$5; mpond+=$2*$3; sum+=$3}}} END { print  ind, bla, mpond/sum}' temp_cov >> GBS_2dp_cov
+awk -vind="11U27_uni" ' {if($2>=5 && $2<=500) {{bla+=$5; mpond+=$2*$3; sum+=$3}}} END { print  ind, bla, mpond/sum}' temp_cov >> GBS_5dp_cov
+awk -vind="11U27_uni" ' {if($2>=2 && $2<=500) {{bla+=$5; mpond+=$2*$3; sum+=$3}}} END { print  ind, bla, mpond/sum}' temp_cov >> GBS_2dp_cov
 rm temp_cov
 
 
