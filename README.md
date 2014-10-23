@@ -23,18 +23,13 @@ Software used:
 - genomeCoverageBed (Bedtools, Quinlan & Hall 2010)
 - mpileup2snp (Varscan, Kobolt et al. 2012)
 
-scripts:
+Run the following scripts:
 
-- 1) GBS_demultiplex.sh
-dempultiplexing and trimming of the fastq files.
+1. **GBS_demultiplex.sh** dempultiplexing and trimming of the fastq files.
 
-- 2) GBS_alignment.sh
-Alignment, remove duplicate, selecting proper aligned reads.
-Coverage calculations.
-Create bams files for each sample.
+2. **GBS_alignment.sh** Alignment, remove duplicate, selecting proper aligned reads. Coverage calculations. Create bams files for each sample.
 
-- 3) GBS_SNPcall.sh
-SNP calling with Varscan.
+3. **GBS_SNPcall.sh SNP** calling with Varscan.
 
 
 
