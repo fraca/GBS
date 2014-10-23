@@ -25,15 +25,15 @@ Software used:
 
 scripts:
 
-- 1) GBS_demultiplex.sh
+- 1) GBS_demultiplex.sh \n
 dempultiplexing and trimming of the fastq files.
 
-- 2) GBS_alignment.sh
+- 2) GBS_alignment.sh \n
 Alignment, remove duplicate, selecting proper aligned reads.
 Coverage calculations.
 Create bams files for each sample.
 
-- 3) GBS_SNPcall.sh
+- 3) GBS_SNPcall.sh \n
 SNP calling with Varscan.
 
 
