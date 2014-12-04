@@ -1,35 +1,35 @@
 GBS
 ==============
 
-Pipeline for analyze Genome By Sequencing data ( NGS technique based on restiction enzyme).
+Pipeline for analyzing Genotyping-By-Sequencing pair-end data (NGS technique based on digest by restiction enzyme).
 
 
 
 - Demultiplexing with preprocess_radtags (Stacks), based on barcode and cutting site of the restriction enzyme.
-- Trimming with trim-fastq.pl (Popoolation).
-- Alignment to A. lyrata genome v1.0 (BWA-MEM).
-- Removing duplicate (Picard tools).
-- Selecting reads with MAPQ when > 20 (samtools).
-- SNP calling with Varscan.
+- Trimming with trim-fastq.pl (PoPoolation).
+- Alignment to Arabidopsis lyrata genome v1.0 (BWA-MEM).
+- Removal of duplicates (Picard tools).
+- Selection of reads with MAPQ >20 (SAMtools).
+- SNP calling with VarScan.
 
 Software used:
 
 - process_radtags (Stacks, Catchen et al. 2013)
-- trim-fastq.pl (Popoolation, Kofler et al. 2012)
-- BWA MEM (Li et al. 2013)
-- samtools (samtools, Li et al. 2009)
+- trim-fastq.pl (PoPoolation, Kofler et al. 2012)
+- bwa mem (BWA Li et al. 2013)
+- samtools (SAMtools, Li et al. 2009)
 - SortSam.jar (Picard tools, http://picard.sourceforge.net)
 - MarkDuplicates.jar (Picard tools, http://picard.sourceforge.net)
-- genomeCoverageBed (Bedtools, Quinlan & Hall 2010)
-- mpileup2snp (Varscan, Kobolt et al. 2012)
+- genomeCoverageBed (BEDTools, Quinlan & Hall 2010)
+- mpileup2snp (VarScan, Kobolt et al. 2012)
 
 Run the following scripts:
 
 1. **GBS_demultiplex.sh** dempultiplexing and trimming of the fastq files.
 
-2. **GBS_alignment.sh** Alignment, remove duplicate, selecting proper aligned reads. Coverage calculations. Create bams files for each sample.
+2. **GBS_alignment.sh** Alignment, removal of duplicates, selection of properly aligned reads. Coverage calculations. Creation of bam files for each sample.
 
-3. **GBS_SNPcall.sh SNP** calling with Varscan.
+3. **GBS_SNPcall.sh** SNP calling with VarScan.
 
 
 
