@@ -2,6 +2,7 @@ GBS
 ==============
 
 Pipeline for analyzing Genotyping-By-Sequencing pair-end data (NGS technique based on digest by restiction enzyme).
+
 M. Fracassetti, P. C. Griffin and Y. Willi (2015). Validation of pooled whole-genome re-sequencing in *Arabidopsis lyrata*. Manuscript submitted for publication.
  
 
