@@ -33,5 +33,5 @@ Run the following scripts:
 
 3. **GBS_SNPcall.sh** SNP calling with VarScan.
 
-
+Fracassetti M, Griffin PC, Willi Y (2015) Validation of Pooled Whole-Genome Re-Sequencing in Arabidopsis lyrata (U Melcher, Ed,). PLOS ONE, 10, e0140462.
 
