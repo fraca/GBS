@@ -3,8 +3,7 @@ GBS
 
 Pipeline for analyzing Genotyping-By-Sequencing pair-end data (NGS technique based on digest by restiction enzyme).
 
-M. Fracassetti, P. C. Griffin and Y. Willi (2015). Validation of pooled whole-genome re-sequencing in *Arabidopsis lyrata*. Manuscript submitted for publication.
- 
+[M. Fracassetti et al. (2015). Validation of pooled whole-genome re-sequencing in *Arabidopsis lyrata*.](http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0140462) 
 
 
 - Demultiplexing with preprocess_radtags (Stacks), based on barcode and cutting site of the restriction enzyme.
@@ -33,5 +32,4 @@ Run the following scripts:
 
 3. **GBS_SNPcall.sh** SNP calling with VarScan.
 
-Fracassetti M, Griffin PC, Willi Y (2015) Validation of Pooled Whole-Genome Re-Sequencing in Arabidopsis lyrata (U Melcher, Ed,). PLOS ONE, 10, e0140462.
 
