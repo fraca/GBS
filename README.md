@@ -15,7 +15,7 @@ Pipeline for analyzing Genotyping-By-Sequencing pair-end data (NGS technique bas
 
 Software used:
 
-- process_radtags (Stacks, Catchen et al. 2013)
+- process_radtags (Stacks, Catchen *et al*. 2013)
 - trim-fastq.pl (PoPoolation, Kofler et al. 2012)
 - bwa mem (BWA Li et al. 2013)
 - samtools (SAMtools, Li et al. 2009)
